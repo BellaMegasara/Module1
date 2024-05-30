@@ -59,19 +59,58 @@
       <li>item Z</li>
     </ol>
 
-    
-
-    <nav>
-      <!-- works like <a href="/index.html">Home</a> -->
-      <a href="/">Home</a>
-    </nav>
-  </header>
-
-  <main>  
-  </main>
-
-  <footer>Copyright &copy; 2024</footer>
-</article>
 </body>
+
+<table>
+  <style>
+    table, th, td {border: 1px solid black;}
+</style>
+</head>
+<body>
+<!-- Ex 4 step 1 Add article with unique h2 tag-->
+<h2>HTML Table</h2>
+<article>
+<!-- Ex 4 step 2 Copy paste code-->
+    <tr>
+        <th colspan="2">First header</th> <!-- Ex step 7 Add a colspan attribute to the first th tag -->
+        <th rowspan="2">Second header</th> <!-- Ex step 8  Add third row with 2 col with rowspan -->
+    </tr>
+    <!-- Ex step 3 Create another row by copying a tr tag below the first row-->
+    <tr>
+        <th>Extra one</th>
+        <th>Extra two</th>
+    </tr>
+    <tbody>
+        <tr>
+            <td>First cell - first row</td>
+            <td>Second cell - first row</td>
+            <td>New third cell</td> <!-- Ex step 6 fix the table by adding the meissing td tag -->
+        </tr>
+        <!-- Ex step 5 Add a third cell inside one of the rows-->
+        <tr>
+            <td>First cell - second row</td>
+            <td>Second cell - second row</td>
+            <td>Third cell - second row</td>
+        </tr>
+    </tbody>
+  </body>
+</table>
+<body>
+<article>
+    <h2>Exercise 5</h2> <!-- ex 5 step 1 add h2 tag inside new article-->
+      <img src="https://picsum.photos/400/400" width="400" height="400" alt="exercise5"/> <!-- Ex 5 step 2 add an image-->
+      <img src="assets/html_lab_image.jpg" width="400" height="400" alt="from drive"> <!--Ex 5 step 3 add image from drive-->
+</article>
+<video autoplay width="250">
+  <source src="/assets/flower.webm" type="video/webm">
+  Sorry, your browser doesn't support embedded videos.
+</video> <!-- Ex 5 step 4 add video-->
+
+<audio autoplay src="/assets/t-rex-roar.mp3"> <!--Ex 5 step 6 remove control and add autoplay-->
+  Your browser does not support the <code>audio</code> element.
+      </audio> <!--Ex 5 step 5 add audio-->
+</body>
+
+<footer>Copyright &copy; 2024</footer>
 
 </html>
